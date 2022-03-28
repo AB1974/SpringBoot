@@ -6,13 +6,15 @@
 
 </head>
 
-<div align="center">
+<div align="left">
 <body>
+
+<h2> Mentor Registration </h2>
 
   <form th:action="@{/mentor/confirm}" method="post"  th:object="${mentor}">
 
       <label>First Name:</label>
-     <input type="text" id="FirstName" th:field="*{firstName}"><br>
+     <input type="text" placeholder="first name" id="FirstName" th:field="*{firstName}"><br>
 
       <label>Last Name:</label>
       <input type="text" id="LastName" th:field="*{lastName}"><br>
